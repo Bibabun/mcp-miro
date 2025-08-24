@@ -14,7 +14,7 @@ const createShapeItemTool: ToolSchema = {
   args: {
     boardId: z.string().describe("Unique identifier (ID) of the board where the shape will be created"),
     data: z.object({
-      shape: z.string().describe("Type of the shape (rectangle, circle, triangle, etc.)"),
+      type: z.string().describe("Type of the shape (rectangle, circle, triangle, etc.)"),
       content: z.string().optional().nullish().describe("Text content to display inside the shape")
     }).describe("The content and configuration of the shape"),
     position: z.object({
