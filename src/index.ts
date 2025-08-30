@@ -48,6 +48,9 @@ import updateTextItemTool from './tools/updateTextItem.js';
 import deleteTextItemTool from './tools/deleteTextItem.js';
 import createItemsInBulkTool from './tools/createItemsInBulk.js';
 import createItemsInBulkUsingFileTool from './tools/createItemsInBulkUsingFile.js';
+import createTableTool from './tools/createTable.js';
+import updateItemsInBulkTool from './tools/updateItemsInBulk.js';
+import deleteItemsInBulkTool from './tools/deleteItemsInBulk.js';
 import createImageItemUsingUrlTool from './tools/createImageItemUsingUrl.js';
 import createImageItemUsingFileFromDeviceTool from './tools/createImageItemUsingFileFromDevice.js';
 import getImageItemTool from './tools/getImageItem.js';
@@ -148,6 +151,9 @@ new ToolBootstrapper(server)
   .register(updateTextItemTool)
   .register(deleteTextItemTool)
   .register(createItemsInBulkTool)
+  .register(createTableTool)
+  .register(updateItemsInBulkTool)
+  .register(deleteItemsInBulkTool)
   .register(createImageItemUsingUrlTool)
   .register(createImageItemUsingFileFromDeviceTool)
   .register(getImageItemTool)
